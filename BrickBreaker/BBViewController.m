@@ -47,7 +47,6 @@
     _moviePlayer.fullscreen = YES;
     _moviePlayer.allowsAirPlay = YES;
     _moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
-    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(moviePlayStateDidChange:)
                                                  name:MPMoviePlayerPlaybackStateDidChangeNotification
@@ -64,23 +63,28 @@
 - (void)moviePlayBackDidFinish : (NSNotification *) notification
 {
     MPMoviePlayerController * player = notification.object;
-    [_moviePlayer stop];
+    [player stop];
 }
 
 -(void)moviePlayStateDidChange : (NSNotification *) notification
 {
     MPMoviePlayerController * player = notification.object;
-    if (_moviePlayer.playbackState == MPMoviePlaybackStatePlaying) {
-        NSLog(@"playing");
-    } else {
-        NSLog(@"stopped");
-        UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Exit playing?"
-                                                         message:nil
-                                                        delegate:self
-                                               cancelButtonTitle:@"NO"
-                                               otherButtonTitles: nil];
-        [alert addButtonWithTitle:@"YES"];
-        [alert show];
+    switch (player.playbackState) {
+        case MPMoviePlaybackStatePlaying:
+            NSLog(@"playing");
+            break;
+            
+        case MPMoviePlaybackStatePaused:
+            {NSLog(@"paused");
+            UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:@"Exit playing?"
+                                                             message:nil
+                                                            delegate:self
+                                                   cancelButtonTitle:@"NO"
+                                                   otherButtonTitles: nil];
+            [alert addButtonWithTitle:@"YES"];
+            [alert show];}
+        default:
+            break;
     }
 }
 
