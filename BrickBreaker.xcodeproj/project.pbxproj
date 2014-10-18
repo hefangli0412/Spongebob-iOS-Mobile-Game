@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		573C02B81908050C00F63968 /* BBMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C02B71908050C00F63968 /* BBMenu.m */; };
+		573C02BF19091DBA00F63968 /* BallBounce.caf in Resources */ = {isa = PBXBuildFile; fileRef = 573C02BA19091DBA00F63968 /* BallBounce.caf */; };
+		573C02C019091DBA00F63968 /* BrickSmash.caf in Resources */ = {isa = PBXBuildFile; fileRef = 573C02BB19091DBA00F63968 /* BrickSmash.caf */; };
+		573C02C119091DBA00F63968 /* LevelUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 573C02BC19091DBA00F63968 /* LevelUp.caf */; };
+		573C02C219091DBA00F63968 /* LoseLife.caf in Resources */ = {isa = PBXBuildFile; fileRef = 573C02BD19091DBA00F63968 /* LoseLife.caf */; };
+		573C02C319091DBA00F63968 /* PaddleBounce.caf in Resources */ = {isa = PBXBuildFile; fileRef = 573C02BE19091DBA00F63968 /* PaddleBounce.caf */; };
+		5775048818FE8B370010AC83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048718FE8B370010AC83 /* Foundation.framework */; };
+		5775048A18FE8B370010AC83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048918FE8B370010AC83 /* CoreGraphics.framework */; };
+		5775048C18FE8B370010AC83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048B18FE8B370010AC83 /* UIKit.framework */; };
+		5775048E18FE8B380010AC83 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048D18FE8B380010AC83 /* SpriteKit.framework */; };
+		5775049418FE8B380010AC83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5775049218FE8B380010AC83 /* InfoPlist.strings */; };
+		5775049618FE8B380010AC83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5775049518FE8B380010AC83 /* main.m */; };
+		5775049A18FE8B380010AC83 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5775049918FE8B380010AC83 /* BBAppDelegate.m */; };
+		5775049D18FE8B380010AC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5775049B18FE8B380010AC83 /* Main.storyboard */; };
+		577504A018FE8B380010AC83 /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5775049F18FE8B380010AC83 /* BBViewController.m */; };
+		577504A318FE8B380010AC83 /* BBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504A218FE8B380010AC83 /* BBMyScene.m */; };
+		577504A718FE8B380010AC83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577504A618FE8B380010AC83 /* Images.xcassets */; };
+		577504AE18FE8B380010AC83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577504AD18FE8B380010AC83 /* XCTest.framework */; };
+		577504AF18FE8B380010AC83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048718FE8B370010AC83 /* Foundation.framework */; };
+		577504B018FE8B380010AC83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048B18FE8B370010AC83 /* UIKit.framework */; };
+		577504B818FE8B380010AC83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577504B618FE8B380010AC83 /* InfoPlist.strings */; };
+		577504BA18FE8B380010AC83 /* BrickBreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504B918FE8B380010AC83 /* BrickBreakerTests.m */; };
+		577504C718FE8B770010AC83 /* BallBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577504C418FE8B770010AC83 /* BallBlue@2x.png */; };
+		577504D318FFEA270010AC83 /* BBBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504D218FFEA270010AC83 /* BBBrick.m */; };
+		57B4DAA819014276007373F1 /* HeartEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAA619014276007373F1 /* HeartEmpty@2x.png */; };
+		57B4DAA919014276007373F1 /* HeartFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAA719014276007373F1 /* HeartFull@2x.png */; };
+		57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */; };
+		57B4DAC91907F6F1007373F1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC71907F6F1007373F1 /* spark.png */; };
+		CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4F702219F246ED0079937C /* UIImage+scale.m */; };
+		CD4F702619F24ABF0079937C /* krab_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702419F24ABF0079937C /* krab_4.png */; };
+		CD4F702719F24ABF0079937C /* krab_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702519F24ABF0079937C /* krab_3.png */; };
+		CD4F702A19F24C510079937C /* Patrick_star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702819F24C510079937C /* Patrick_star_3.png */; };
+		CD4F702B19F24C510079937C /* Patrick_star_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702919F24C510079937C /* Patrick_star_4.png */; };
+		CD4F702E19F24E590079937C /* Spongebob_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702C19F24E590079937C /* Spongebob_2.png */; };
+		CD4F702F19F24E590079937C /* Spongebob_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702D19F24E590079937C /* Spongebob_1.png */; };
+		CD4F703119F25BFC0079937C /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F703019F25BFC0079937C /* bubble.png */; };
+		CD4F703719F260180079937C /* MenuPanel_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F703619F260180079937C /* MenuPanel_1@2x.png */; };
+		CD4F704519F269350079937C /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F704419F269350079937C /* Button@2x.png */; };
+		CD4F704D19F272760079937C /* sandy_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F704C19F272760079937C /* sandy_3.png */; };
+		CD4F705319F2750F0079937C /* squidward.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F705219F2750F0079937C /* squidward.png */; };
+		CD4F705519F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */; };
+		CD4F705719F2CE650079937C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4F705619F2CE650079937C /* AVFoundation.framework */; };
+		CDA9330519F2E8E300313167 /* plank_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330319F2E8E300313167 /* plank_1.png */; };
+		CDA9330619F2E8E300313167 /* plank_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330419F2E8E300313167 /* plank_2.png */; };
+		CDA9330819F2EDBD00313167 /* spongebob-pants.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330719F2EDBD00313167 /* spongebob-pants.png */; };
+		CDA9330C19F30A7C00313167 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA9330B19F30A7C00313167 /* MediaPlayer.framework */; };
+		CDA9332219F30DBF00313167 /* introvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDA9332119F30DBF00313167 /* introvideo.mp4 */; };
+		CDD1ED0D19F242AA0077163F /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0B19F242AA0077163F /* bg_2.png */; };
+		CDD1ED0E19F242AA0077163F /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0C19F242AA0077163F /* bg_3.png */; };
+		CDD1ED1119F244370077163F /* gary_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0F19F244370077163F /* gary_1.png */; };
+		CDD1ED1219F244370077163F /* gary_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED1019F244370077163F /* gary_2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		577504B118FE8B380010AC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5775047C18FE8B370010AC83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5775048318FE8B370010AC83;
+			remoteInfo = BrickBreaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		573C02B61908050C00F63968 /* BBMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMenu.h; sourceTree = "<group>"; };
+		573C02B71908050C00F63968 /* BBMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMenu.m; sourceTree = "<group>"; };
+		573C02BA19091DBA00F63968 /* BallBounce.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BallBounce.caf; sourceTree = "<group>"; };
+		573C02BB19091DBA00F63968 /* BrickSmash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrickSmash.caf; sourceTree = "<group>"; };
+		573C02BC19091DBA00F63968 /* LevelUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelUp.caf; sourceTree = "<group>"; };
+		573C02BD19091DBA00F63968 /* LoseLife.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LoseLife.caf; sourceTree = "<group>"; };
+		573C02BE19091DBA00F63968 /* PaddleBounce.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PaddleBounce.caf; sourceTree = "<group>"; };
+		5775048418FE8B370010AC83 /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5775048718FE8B370010AC83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5775048918FE8B370010AC83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5775048B18FE8B370010AC83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5775048D18FE8B380010AC83 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		5775049118FE8B380010AC83 /* BrickBreaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrickBreaker-Info.plist"; sourceTree = "<group>"; };
+		5775049318FE8B380010AC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5775049518FE8B380010AC83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5775049718FE8B380010AC83 /* BrickBreaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrickBreaker-Prefix.pch"; sourceTree = "<group>"; };
+		5775049818FE8B380010AC83 /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		5775049918FE8B380010AC83 /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		5775049C18FE8B380010AC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5775049E18FE8B380010AC83 /* BBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		5775049F18FE8B380010AC83 /* BBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		577504A118FE8B380010AC83 /* BBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMyScene.h; sourceTree = "<group>"; };
+		577504A218FE8B380010AC83 /* BBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMyScene.m; sourceTree = "<group>"; };
+		577504A618FE8B380010AC83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickBreakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		577504AD18FE8B380010AC83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		577504B518FE8B380010AC83 /* BrickBreakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrickBreakerTests-Info.plist"; sourceTree = "<group>"; };
+		577504B718FE8B380010AC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		577504B918FE8B380010AC83 /* BrickBreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrickBreakerTests.m; sourceTree = "<group>"; };
+		577504C418FE8B770010AC83 /* BallBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BallBlue@2x.png"; sourceTree = "<group>"; };
+		577504D118FFEA270010AC83 /* BBBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBrick.h; sourceTree = "<group>"; };
+		577504D218FFEA270010AC83 /* BBBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBrick.m; sourceTree = "<group>"; };
+		57B4DAA619014276007373F1 /* HeartEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartEmpty@2x.png"; sourceTree = "<group>"; };
+		57B4DAA719014276007373F1 /* HeartFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartFull@2x.png"; sourceTree = "<group>"; };
+		57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrickExplosion.sks; sourceTree = "<group>"; };
+		57B4DAC71907F6F1007373F1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CD4F702119F246ED0079937C /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
+		CD4F702219F246ED0079937C /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
+		CD4F702419F24ABF0079937C /* krab_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_4.png; sourceTree = "<group>"; };
+		CD4F702519F24ABF0079937C /* krab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_3.png; sourceTree = "<group>"; };
+		CD4F702819F24C510079937C /* Patrick_star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Patrick_star_3.png; path = ../Patrick_star_3.png; sourceTree = "<group>"; };
+		CD4F702919F24C510079937C /* Patrick_star_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Patrick_star_4.png; path = ../Patrick_star_4.png; sourceTree = "<group>"; };
+		CD4F702C19F24E590079937C /* Spongebob_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_2.png; sourceTree = "<group>"; };
+		CD4F702D19F24E590079937C /* Spongebob_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_1.png; sourceTree = "<group>"; };
+		CD4F703019F25BFC0079937C /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		CD4F703619F260180079937C /* MenuPanel_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuPanel_1@2x.png"; sourceTree = "<group>"; };
+		CD4F704419F269350079937C /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		CD4F704C19F272760079937C /* sandy_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandy_3.png; sourceTree = "<group>"; };
+		CD4F705219F2750F0079937C /* squidward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squidward.png; sourceTree = "<group>"; };
+		CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SpongeBob Soundtracks - Soundtrack 4.mp3"; sourceTree = "<group>"; };
+		CD4F705619F2CE650079937C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CDA9330319F2E8E300313167 /* plank_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank_1.png; sourceTree = "<group>"; };
+		CDA9330419F2E8E300313167 /* plank_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank_2.png; sourceTree = "<group>"; };
+		CDA9330719F2EDBD00313167 /* spongebob-pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spongebob-pants.png"; sourceTree = "<group>"; };
+		CDA9330B19F30A7C00313167 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CDA9332119F30DBF00313167 /* introvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introvideo.mp4; sourceTree = "<group>"; };
+		CDD1ED0B19F242AA0077163F /* bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_2.png; sourceTree = "<group>"; };
+		CDD1ED0C19F242AA0077163F /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_3.png; sourceTree = "<group>"; };
+		CDD1ED0F19F244370077163F /* gary_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_1.png; sourceTree = "<group>"; };
+		CDD1ED1019F244370077163F /* gary_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5775048118FE8B370010AC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA9330C19F30A7C00313167 /* MediaPlayer.framework in Frameworks */,
+				CD4F705719F2CE650079937C /* AVFoundation.framework in Frameworks */,
+				5775048A18FE8B370010AC83 /* CoreGraphics.framework in Frameworks */,
+				5775048C18FE8B370010AC83 /* UIKit.framework in Frameworks */,
+				5775048E18FE8B380010AC83 /* SpriteKit.framework in Frameworks */,
+				5775048818FE8B370010AC83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577504A918FE8B380010AC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577504AE18FE8B380010AC83 /* XCTest.framework in Frameworks */,
+				577504B018FE8B380010AC83 /* UIKit.framework in Frameworks */,
+				577504AF18FE8B380010AC83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		573C02B919091DBA00F63968 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				573C02BA19091DBA00F63968 /* BallBounce.caf */,
+				573C02BB19091DBA00F63968 /* BrickSmash.caf */,
+				573C02BC19091DBA00F63968 /* LevelUp.caf */,
+				CDA9332119F30DBF00313167 /* introvideo.mp4 */,
+				CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */,
+				573C02BD19091DBA00F63968 /* LoseLife.caf */,
+				573C02BE19091DBA00F63968 /* PaddleBounce.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5775047B18FE8B370010AC83 = {
+			isa = PBXGroup;
+			children = (
+				5775048F18FE8B380010AC83 /* BrickBreaker */,
+				577504B318FE8B380010AC83 /* BrickBreakerTests */,
+				5775048618FE8B370010AC83 /* Frameworks */,
+				5775048518FE8B370010AC83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5775048518FE8B370010AC83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5775048418FE8B370010AC83 /* BrickBreaker.app */,
+				577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5775048618FE8B370010AC83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDA9330B19F30A7C00313167 /* MediaPlayer.framework */,
+				CD4F705619F2CE650079937C /* AVFoundation.framework */,
+				5775048718FE8B370010AC83 /* Foundation.framework */,
+				5775048918FE8B370010AC83 /* CoreGraphics.framework */,
+				5775048B18FE8B370010AC83 /* UIKit.framework */,
+				5775048D18FE8B380010AC83 /* SpriteKit.framework */,
+				577504AD18FE8B380010AC83 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5775048F18FE8B380010AC83 /* BrickBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				573C02B919091DBA00F63968 /* Sounds */,
+				577504C318FE8B770010AC83 /* Graphics */,
+				5775049818FE8B380010AC83 /* BBAppDelegate.h */,
+				5775049918FE8B380010AC83 /* BBAppDelegate.m */,
+				5775049B18FE8B380010AC83 /* Main.storyboard */,
+				5775049E18FE8B380010AC83 /* BBViewController.h */,
+				5775049F18FE8B380010AC83 /* BBViewController.m */,
+				573C02B61908050C00F63968 /* BBMenu.h */,
+				573C02B71908050C00F63968 /* BBMenu.m */,
+				577504D118FFEA270010AC83 /* BBBrick.h */,
+				577504D218FFEA270010AC83 /* BBBrick.m */,
+				577504A118FE8B380010AC83 /* BBMyScene.h */,
+				577504A218FE8B380010AC83 /* BBMyScene.m */,
+				CD4F702119F246ED0079937C /* UIImage+scale.h */,
+				CD4F702219F246ED0079937C /* UIImage+scale.m */,
+				57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */,
+				57B4DAC71907F6F1007373F1 /* spark.png */,
+				577504A618FE8B380010AC83 /* Images.xcassets */,
+				5775049018FE8B380010AC83 /* Supporting Files */,
+			);
+			path = BrickBreaker;
+			sourceTree = "<group>";
+		};
+		5775049018FE8B380010AC83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5775049118FE8B380010AC83 /* BrickBreaker-Info.plist */,
+				5775049218FE8B380010AC83 /* InfoPlist.strings */,
+				5775049518FE8B380010AC83 /* main.m */,
+				5775049718FE8B380010AC83 /* BrickBreaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		577504B318FE8B380010AC83 /* BrickBreakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				577504B918FE8B380010AC83 /* BrickBreakerTests.m */,
+				577504B418FE8B380010AC83 /* Supporting Files */,
+			);
+			path = BrickBreakerTests;
+			sourceTree = "<group>";
+		};
+		577504B418FE8B380010AC83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				577504B518FE8B380010AC83 /* BrickBreakerTests-Info.plist */,
+				577504B618FE8B380010AC83 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		577504C318FE8B770010AC83 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				CDD1ED0B19F242AA0077163F /* bg_2.png */,
+				CDD1ED0C19F242AA0077163F /* bg_3.png */,
+				CD4F704C19F272760079937C /* sandy_3.png */,
+				CDD1ED0F19F244370077163F /* gary_1.png */,
+				CD4F702C19F24E590079937C /* Spongebob_2.png */,
+				CD4F705219F2750F0079937C /* squidward.png */,
+				CD4F704419F269350079937C /* Button@2x.png */,
+				CD4F702D19F24E590079937C /* Spongebob_1.png */,
+				CDA9330719F2EDBD00313167 /* spongebob-pants.png */,
+				CD4F703619F260180079937C /* MenuPanel_1@2x.png */,
+				CDA9330319F2E8E300313167 /* plank_1.png */,
+				CDA9330419F2E8E300313167 /* plank_2.png */,
+				CDD1ED1019F244370077163F /* gary_2.png */,
+				CD4F702419F24ABF0079937C /* krab_4.png */,
+				CD4F702519F24ABF0079937C /* krab_3.png */,
+				CD4F702819F24C510079937C /* Patrick_star_3.png */,
+				CD4F702919F24C510079937C /* Patrick_star_4.png */,
+				CD4F703019F25BFC0079937C /* bubble.png */,
+				57B4DAA619014276007373F1 /* HeartEmpty@2x.png */,
+				57B4DAA719014276007373F1 /* HeartFull@2x.png */,
+				577504C418FE8B770010AC83 /* BallBlue@2x.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5775048318FE8B370010AC83 /* BrickBreaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreaker" */;
+			buildPhases = (
+				5775048018FE8B370010AC83 /* Sources */,
+				5775048118FE8B370010AC83 /* Frameworks */,
+				5775048218FE8B370010AC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrickBreaker;
+			productName = BrickBreaker;
+			productReference = 5775048418FE8B370010AC83 /* BrickBreaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		577504AB18FE8B380010AC83 /* BrickBreakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreakerTests" */;
+			buildPhases = (
+				577504A818FE8B380010AC83 /* Sources */,
+				577504A918FE8B380010AC83 /* Frameworks */,
+				577504AA18FE8B380010AC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577504B218FE8B380010AC83 /* PBXTargetDependency */,
+			);
+			name = BrickBreakerTests;
+			productName = BrickBreakerTests;
+			productReference = 577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5775047C18FE8B370010AC83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "J Hastwell";
+				TargetAttributes = {
+					577504AB18FE8B380010AC83 = {
+						TestTargetID = 5775048318FE8B370010AC83;
+					};
+				};
+			};
+			buildConfigurationList = 5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "BrickBreaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5775047B18FE8B370010AC83;
+			productRefGroup = 5775048518FE8B370010AC83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5775048318FE8B370010AC83 /* BrickBreaker */,
+				577504AB18FE8B380010AC83 /* BrickBreakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5775048218FE8B370010AC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B4DAA919014276007373F1 /* HeartFull@2x.png in Resources */,
+				57B4DAC91907F6F1007373F1 /* spark.png in Resources */,
+				CDA9330619F2E8E300313167 /* plank_2.png in Resources */,
+				5775049418FE8B380010AC83 /* InfoPlist.strings in Resources */,
+				CD4F703719F260180079937C /* MenuPanel_1@2x.png in Resources */,
+				577504A718FE8B380010AC83 /* Images.xcassets in Resources */,
+				CD4F705519F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 in Resources */,
+				CD4F704519F269350079937C /* Button@2x.png in Resources */,
+				57B4DAA819014276007373F1 /* HeartEmpty@2x.png in Resources */,
+				CD4F702F19F24E590079937C /* Spongebob_1.png in Resources */,
+				CD4F704D19F272760079937C /* sandy_3.png in Resources */,
+				5775049D18FE8B380010AC83 /* Main.storyboard in Resources */,
+				57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */,
+				573C02C119091DBA00F63968 /* LevelUp.caf in Resources */,
+				CD4F705319F2750F0079937C /* squidward.png in Resources */,
+				CDA9330519F2E8E300313167 /* plank_1.png in Resources */,
+				CDD1ED0E19F242AA0077163F /* bg_3.png in Resources */,
+				573C02C319091DBA00F63968 /* PaddleBounce.caf in Resources */,
+				CD4F702B19F24C510079937C /* Patrick_star_4.png in Resources */,
+				CDA9332219F30DBF00313167 /* introvideo.mp4 in Resources */,
+				CD4F702A19F24C510079937C /* Patrick_star_3.png in Resources */,
+				CDD1ED1219F244370077163F /* gary_2.png in Resources */,
+				573C02C219091DBA00F63968 /* LoseLife.caf in Resources */,
+				573C02BF19091DBA00F63968 /* BallBounce.caf in Resources */,
+				CD4F702719F24ABF0079937C /* krab_3.png in Resources */,
+				CDA9330819F2EDBD00313167 /* spongebob-pants.png in Resources */,
+				CD4F703119F25BFC0079937C /* bubble.png in Resources */,
+				CD4F702619F24ABF0079937C /* krab_4.png in Resources */,
+				CDD1ED1119F244370077163F /* gary_1.png in Resources */,
+				CDD1ED0D19F242AA0077163F /* bg_2.png in Resources */,
+				573C02C019091DBA00F63968 /* BrickSmash.caf in Resources */,
+				CD4F702E19F24E590079937C /* Spongebob_2.png in Resources */,
+				577504C718FE8B770010AC83 /* BallBlue@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577504AA18FE8B380010AC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577504B818FE8B380010AC83 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5775048018FE8B370010AC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577504A018FE8B380010AC83 /* BBViewController.m in Sources */,
+				5775049A18FE8B380010AC83 /* BBAppDelegate.m in Sources */,
+				577504A318FE8B380010AC83 /* BBMyScene.m in Sources */,
+				577504D318FFEA270010AC83 /* BBBrick.m in Sources */,
+				CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */,
+				573C02B81908050C00F63968 /* BBMenu.m in Sources */,
+				5775049618FE8B380010AC83 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577504A818FE8B380010AC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577504BA18FE8B380010AC83 /* BrickBreakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		577504B218FE8B380010AC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5775048318FE8B370010AC83 /* BrickBreaker */;
+			targetProxy = 577504B118FE8B380010AC83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5775049218FE8B380010AC83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5775049318FE8B380010AC83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5775049B18FE8B380010AC83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5775049C18FE8B380010AC83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		577504B618FE8B380010AC83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577504B718FE8B380010AC83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		577504BB18FE8B380010AC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		577504BC18FE8B380010AC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		577504BE18FE8B380010AC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
+				INFOPLIST_FILE = "BrickBreaker/BrickBreaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		577504BF18FE8B380010AC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
+				INFOPLIST_FILE = "BrickBreaker/BrickBreaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		577504C118FE8B380010AC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrickBreaker.app/BrickBreaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BrickBreakerTests/BrickBreakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		577504C218FE8B380010AC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrickBreaker.app/BrickBreaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
+				INFOPLIST_FILE = "BrickBreakerTests/BrickBreakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "BrickBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577504BB18FE8B380010AC83 /* Debug */,
+				577504BC18FE8B380010AC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577504BE18FE8B380010AC83 /* Debug */,
+				577504BF18FE8B380010AC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577504C118FE8B380010AC83 /* Debug */,
+				577504C218FE8B380010AC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5775047C18FE8B370010AC83 /* Project object */;
+}
