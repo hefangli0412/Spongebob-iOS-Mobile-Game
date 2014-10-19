@@ -20,32 +20,38 @@
     
     switch (type) {
         case Green:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"gary_1"],
                                   [SKTexture textureWithImageNamed:@"gary_2"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
             break;}
         case Blue:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"Spongebob_1"],
                                   [SKTexture textureWithImageNamed:@"Spongebob_2"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
+            SKAction *scale = [SKAction resizeToWidth:0.8 * self.size.width height:self.size.height duration:0];
+            [self runAction:scale];
             break;}
         case Grey:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"krab_3"],
                                   [SKTexture textureWithImageNamed:@"krab_4"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
-                break;}
+            SKAction *scale = [SKAction resizeToWidth:0.9 * self.size.width height:self.size.height duration:0];
+            [self runAction:scale];
+            break;}
         case Yellow:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"Patrick_star_3"],
                                   [SKTexture textureWithImageNamed:@"Patrick_star_4"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
+            SKAction *scale = [SKAction resizeToWidth:0.9 * self.size.width height:self.size.height duration:0];
+            [self runAction:scale];
             break;}
         default:
             self = nil;
@@ -88,6 +94,8 @@
                                   [SKTexture textureWithImageNamed:@"gary_2"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
+            SKAction *scale = [SKAction resizeToWidth:self.size.width/0.8 height:self.size.height duration:0];
+            [self runAction:scale];
             self.type = Green;
             break;}
         default:

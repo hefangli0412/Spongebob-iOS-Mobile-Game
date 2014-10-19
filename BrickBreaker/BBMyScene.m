@@ -64,7 +64,7 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         self.physicsBody.categoryBitMask = kEdgeCategory;
         
         // Add HUD bar.
-        SKSpriteNode *bar = [SKSpriteNode spriteNodeWithColor:[SKColor colorWithRed:0.831 green:0.831 blue:0.831 alpha:0.6] size:CGSizeMake(size.width, 28)];
+        SKSpriteNode *bar = [SKSpriteNode spriteNodeWithColor:[SKColor colorWithRed:0 green:0 blue:0 alpha:0] size:CGSizeMake(size.width, 28)];
         bar.position = CGPointMake(0, size.height);
         bar.anchorPoint = CGPointMake(0, 1);
         [self addChild:bar];
@@ -79,12 +79,8 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         _levelDisplay.position = CGPointMake(10, -10);
         [bar addChild:_levelDisplay];
         
-        // Setup sounds.
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"SpongeBob Soundtracks - Soundtrack 4" withExtension:@"mp3"];
-        _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-        _backgroundMusic.numberOfLoops = -1;
-        _backgroundMusic.volume = 0.8;
-        [_backgroundMusic prepareToPlay];
+
+//        [_backgroundMusic prepareToPlay];
         
         _ballBounceSound = [SKAction playSoundFileNamed:@"BallBounce.caf" waitForCompletion:NO];
         _paddleBounceSound = [SKAction playSoundFileNamed:@"PaddleBounce.caf" waitForCompletion:NO];
@@ -106,7 +102,6 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
             heart.position = CGPointMake(self.size.width - (16 + (29 * i)), self.size.height - 14);
             [self addChild:heart];
         }
-        
         
         _paddle = [SKSpriteNode spriteNodeWithImageNamed:@"squidward"];
         _paddle.position = CGPointMake(self.size.width * 0.5, 90);
@@ -135,7 +130,12 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
 }
 
 -(void)didMoveToView:(SKView *)view {
-//    [_backgroundMusic play];
+    // Setup sounds.
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Spongebob Soundtrack - Hawaiian Party" withExtension:@"mp3"];
+    _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    _backgroundMusic.numberOfLoops = -1;
+    _backgroundMusic.volume = 0.8;
+    [_backgroundMusic play];
 }
 
 -(void)newBall
@@ -185,34 +185,34 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
     
     switch (levelNumber) {
         case 1:
-            /*level = @[@[@1,@1,@1,@1,@1,@1,@1],
-                      @[@0,@1,@1,@1,@1,@0,@0],
-                      @[@0,@0,@0,@3,@0,@0,@0],
+            level = @[@[@1,@1,@1,@1,@1,@1],
+                      @[@0,@1,@1,@1,@1,@0],
+                      @[@0,@0,@0,@3,@0,@0],
+                      @[@0,@0,@0,@0,@0,@0],
+                      @[@0,@2,@2,@2,@2,@0]];
+            /*level = @[@[@0,@0,@0,@1,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@2,@2,@2,@2,@0,@0]];*/
-            level = @[@[@0,@0,@0,@1,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0]];
+                      @[@0,@0,@0,@0,@0,@0,@0]];*/
             break;
             
         case 2:
-            level = @[@[@4,@1,@2,@2,@2,@1,@4],
-                      @[@1,@2,@0,@0,@2,@1,@0],
-                      @[@1,@0,@0,@0,@0,@1,@3],
-                      @[@0,@0,@1,@1,@0,@0,@0],
-                      @[@1,@0,@1,@1,@1,@0,@1],
-                      @[@1,@1,@3,@3,@1,@1,@1]];
+            level = @[@[@4,@2,@2,@2,@2,@4],
+                      @[@1,@2,@0,@0,@2,@1],
+                      @[@1,@0,@0,@0,@0,@1],
+                      @[@0,@0,@1,@1,@0,@0],
+                      @[@1,@0,@1,@1,@0,@1],
+                      @[@1,@1,@3,@3,@1,@1]];
             break;
             
         case 3:
-            level = @[@[@1,@0,@1,@1,@0,@1,@4],
-                      @[@1,@0,@1,@1,@0,@1,@1],
-                      @[@0,@0,@3,@3,@0,@0,@0],
-                      @[@2,@0,@0,@0,@0,@2,@4],
-                      @[@0,@0,@1,@1,@0,@0,@0],
-                      @[@3,@2,@1,@1,@2,@3,@3]];
+            level = @[@[@1,@0,@1,@1,@0,@1],
+                      @[@1,@0,@1,@1,@0,@1],
+                      @[@0,@0,@3,@3,@0,@0],
+                      @[@2,@0,@0,@0,@0,@2],
+                      @[@0,@0,@1,@1,@0,@0],
+                      @[@3,@2,@1,@1,@2,@3]];
             break;
             
         default:
@@ -229,7 +229,7 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
             if ([brickType intValue] > 0) {
                 BBBrick *brick = [[BBBrick alloc] initWithType:(BrickType)[brickType intValue]];
                 if (brick) {
-                    brick.position = CGPointMake(2 + (brick.size.width * 0.5) + ((brick.size.width + 3) * col)
+                    brick.position = CGPointMake(10 + (brick.size.width * 0.5) + ((brick.size.width + 10) * col)
                                                  , -(2 + (brick.size.height * 0.5) + ((brick.size.height + 3) * row)));
                     
                     [_brickLayer addChild:brick];

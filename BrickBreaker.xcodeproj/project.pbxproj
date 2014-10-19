@@ -35,6 +35,7 @@
 		57B4DAA919014276007373F1 /* HeartFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAA719014276007373F1 /* HeartFull@2x.png */; };
 		57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */; };
 		57B4DAC91907F6F1007373F1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC71907F6F1007373F1 /* spark.png */; };
+		CD34AA6819F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */; };
 		CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4F702219F246ED0079937C /* UIImage+scale.m */; };
 		CD4F702619F24ABF0079937C /* krab_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702419F24ABF0079937C /* krab_4.png */; };
 		CD4F702719F24ABF0079937C /* krab_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702519F24ABF0079937C /* krab_3.png */; };
@@ -107,6 +108,7 @@
 		57B4DAA719014276007373F1 /* HeartFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartFull@2x.png"; sourceTree = "<group>"; };
 		57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrickExplosion.sks; sourceTree = "<group>"; };
 		57B4DAC71907F6F1007373F1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spongebob Soundtrack - Hawaiian Party.mp3"; sourceTree = "<group>"; };
 		CD4F702119F246ED0079937C /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
 		CD4F702219F246ED0079937C /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
 		CD4F702419F24ABF0079937C /* krab_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_4.png; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				573C02BA19091DBA00F63968 /* BallBounce.caf */,
 				573C02BB19091DBA00F63968 /* BrickSmash.caf */,
+				CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */,
 				573C02BC19091DBA00F63968 /* LevelUp.caf */,
 				CDA9332119F30DBF00313167 /* introvideo.mp4 */,
 				CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */,
@@ -394,6 +397,7 @@
 				CD4F702719F24ABF0079937C /* krab_3.png in Resources */,
 				CDA9330819F2EDBD00313167 /* spongebob-pants.png in Resources */,
 				CD4F703119F25BFC0079937C /* bubble.png in Resources */,
+				CD34AA6819F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 in Resources */,
 				CD4F702619F24ABF0079937C /* krab_4.png in Resources */,
 				CDD1ED1119F244370077163F /* gary_1.png in Resources */,
 				CDD1ED0D19F242AA0077163F /* bg_2.png in Resources */,
