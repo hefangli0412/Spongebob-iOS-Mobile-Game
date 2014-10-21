@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9E4E9622-4517-4CBF-9641-ECB3244E5F21</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SpongebobMobileGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BA023DB7-B79B-47D0-AD43-9E8055E37812</key>
+		<string>https://bitbucket.org/hefangli0412/spongebobmobilegame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SpongebobMobileGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97B520BD-2F0D-40C1-831F-C97C1061122F</key>
+		<string>../../../Brick-Breaker-master</string>
+		<key>BA023DB7-B79B-47D0-AD43-9E8055E37812</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hefangli0412/spongebobmobilegame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BA023DB7-B79B-47D0-AD43-9E8055E37812</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97B520BD-2F0D-40C1-831F-C97C1061122F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Brick-Breaker-master</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BA023DB7-B79B-47D0-AD43-9E8055E37812</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpongebobMobileGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

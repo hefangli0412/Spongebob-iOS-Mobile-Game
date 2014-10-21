@@ -257,7 +257,7 @@ static const uint32_t kBallCategory   = 0x1 << 0;
     ball.physicsBody.categoryBitMask = kBallCategory;
     ball.physicsBody.contactTestBitMask = kPaddleCategory | kBrickCategory | kEdgeCategory;
     ball.physicsBody.collisionBitMask = kPaddleCategory | kBrickCategory | kEdgeCategory;
-    
+    ball.anchorPoint = CGPointMake(1, 1);
     SKAction *rotate = [SKAction rotateByAngle:2 duration:1];
     SKAction *repeatrotate = [SKAction repeatActionForever:rotate];
     [ball runAction:repeatrotate];
@@ -422,6 +422,9 @@ static const uint32_t kBallCategory   = 0x1 << 0;
         [self newBall];
         [_menu show];
         [self runAction:_levelUpSound];
+        // restore paddle
+        SKAction *scaleLarge = [SKAction scaleTo:1 duration:0];
+        [_paddle runAction:scaleLarge];
     } else if (_ballReleased && !_positionBall && ![self childNodeWithName:@"ball"]) {
         // Lost all balls.
         self.lives--;

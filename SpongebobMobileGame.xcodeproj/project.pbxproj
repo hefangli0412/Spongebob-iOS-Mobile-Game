@@ -32,6 +32,8 @@
 		577504D318FFEA270010AC83 /* BBBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504D218FFEA270010AC83 /* BBBrick.m */; };
 		57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */; };
 		57B4DAC91907F6F1007373F1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC71907F6F1007373F1 /* spark.png */; };
+		CD1C07F119F6D7E80039E0A4 /* Patrick_star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1C07EF19F6D7E80039E0A4 /* Patrick_star_3.png */; };
+		CD1C07F219F6D7E80039E0A4 /* Patrick_star_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1C07F019F6D7E80039E0A4 /* Patrick_star_4.png */; };
 		CD34AA6819F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */; };
 		CD4DF6DF19F5856A002CD795 /* BBTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4DF6DE19F5856A002CD795 /* BBTitleScene.m */; };
 		CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4F702219F246ED0079937C /* UIImage+scale.m */; };
@@ -105,6 +107,8 @@
 		577504D218FFEA270010AC83 /* BBBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBrick.m; sourceTree = "<group>"; };
 		57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrickExplosion.sks; sourceTree = "<group>"; };
 		57B4DAC71907F6F1007373F1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		CD1C07EF19F6D7E80039E0A4 /* Patrick_star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Patrick_star_3.png; sourceTree = "<group>"; };
+		CD1C07F019F6D7E80039E0A4 /* Patrick_star_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Patrick_star_4.png; sourceTree = "<group>"; };
 		CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spongebob Soundtrack - Hawaiian Party.mp3"; sourceTree = "<group>"; };
 		CD4DF6DD19F5856A002CD795 /* BBTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTitleScene.h; sourceTree = "<group>"; };
 		CD4DF6DE19F5856A002CD795 /* BBTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTitleScene.m; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 				CDA81E8E19F5FEB9003E075A /* gary_1.png */,
 				CDA81E8F19F5FEB9003E075A /* gary_2.png */,
 				CDA81E9019F5FEB9003E075A /* HeartEmpty@2x.png */,
+				CD1C07EF19F6D7E80039E0A4 /* Patrick_star_3.png */,
+				CD1C07F019F6D7E80039E0A4 /* Patrick_star_4.png */,
 				CDA81E9119F5FEB9003E075A /* HeartFull@2x.png */,
 				CDA81E9219F5FEB9003E075A /* jellyfish.png */,
 				CDA81E9319F5FEB9003E075A /* krab_3.png */,
@@ -387,6 +393,7 @@
 				CDA81EA419F5FEB9003E075A /* jellyfish.png in Resources */,
 				CDA81EA919F5FEB9003E075A /* sandy_3.png in Resources */,
 				CDA81EA819F5FEB9003E075A /* plank_2.png in Resources */,
+				CD1C07F219F6D7E80039E0A4 /* Patrick_star_4.png in Resources */,
 				CDA81E9E19F5FEB9003E075A /* bg_3.png in Resources */,
 				CDFE655C19F44317001AFA70 /* Spongebob-disappointed-sound.caf in Resources */,
 				CDA81E9F19F5FEB9003E075A /* bubble.png in Resources */,
@@ -394,6 +401,7 @@
 				573C02C319091DBA00F63968 /* PaddleBounce.caf in Resources */,
 				CDA81EAD19F5FEB9003E075A /* squidward.png in Resources */,
 				CDA81EA319F5FEB9003E075A /* HeartFull@2x.png in Resources */,
+				CD1C07F119F6D7E80039E0A4 /* Patrick_star_3.png in Resources */,
 				CDA81EA719F5FEB9003E075A /* MenuPanel_1@2x.png in Resources */,
 				CDA9332219F30DBF00313167 /* introvideo.mp4 in Resources */,
 				CDA81EA019F5FEB9003E075A /* gary_1.png in Resources */,
