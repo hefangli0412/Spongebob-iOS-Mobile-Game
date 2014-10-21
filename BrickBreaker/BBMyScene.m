@@ -15,12 +15,14 @@
 
 @property (nonatomic) int lives;
 @property (nonatomic) int currentLevel;
-@property (nonatomic) SKSpriteNode *bg;
 
 @end
 
 @implementation BBMyScene
 {
+    
+    SKSpriteNode *_backgroundImage;
+    AVAudioPlayer *_backgroundMusic;
     SKSpriteNode *_paddle;
     CGPoint _touchLocation;
     CGFloat _ballSpeed;
@@ -34,34 +36,32 @@
     SKAction *_paddleBounceSound;
     SKAction *_levelUpSound;
     SKAction *_loseLifeSound;
-    AVAudioPlayer *_backgroundMusic;
 }
 
 static const int kFinalLevelNumber = 3;
 
 static const uint32_t kBallCategory   = 0x1 << 0;
-static const uint32_t kPaddleCategory = 0x1 << 1;
-static const uint32_t kEdgeCategory   = 0x1 << 2;
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        SKSpriteNode *bg = [SKSpriteNode spriteNodeWithImageNamed:@"bg_2"];
+        SKSpriteNode *bg = [SKSpriteNode spriteNodeWithImageNamed:@"bg_1"];
         bg.size = self.frame.size;
         bg.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         bg.name = @"BACKGROUND";
-        self.bg = bg;
+        _backgroundImage = bg;
         [self addChild:bg];
 
-        // Turn off gravity.
-        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
+        // Turn on gravity.
+        self.physicsWorld.gravity = CGVectorMake(0.0, -3.6);
         // Set contact delgate.
         self.physicsWorld.contactDelegate = self;
         
         // Setup edge.
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:CGRectMake(0, -128, size.width, size.height + 100)];
         self.physicsBody.categoryBitMask = kEdgeCategory;
+        self.physicsBody.contactTestBitMask = kFallCategory;
         
         // Add HUD bar.
         SKSpriteNode *bar = [SKSpriteNode spriteNodeWithColor:[SKColor colorWithRed:0 green:0 blue:0 alpha:0] size:CGSizeMake(size.width, 28)];
@@ -79,13 +79,10 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         _levelDisplay.position = CGPointMake(10, -10);
         [bar addChild:_levelDisplay];
         
-
-//        [_backgroundMusic prepareToPlay];
-        
         _ballBounceSound = [SKAction playSoundFileNamed:@"BallBounce.caf" waitForCompletion:NO];
         _paddleBounceSound = [SKAction playSoundFileNamed:@"PaddleBounce.caf" waitForCompletion:NO];
         _levelUpSound = [SKAction playSoundFileNamed:@"LevelUp.caf" waitForCompletion:NO];
-        _loseLifeSound = [SKAction playSoundFileNamed:@"LoseLife.caf" waitForCompletion:NO];
+        _loseLifeSound = [SKAction playSoundFileNamed:@"Spongebob-disappointed-sound.caf" waitForCompletion:NO];
         
         // Setup brick layer.
         _brickLayer = [SKNode node];
@@ -104,16 +101,19 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         }
         
         _paddle = [SKSpriteNode spriteNodeWithImageNamed:@"squidward"];
-        _paddle.position = CGPointMake(self.size.width * 0.5, 90);
+        _paddle.position = CGPointMake(self.size.width * 0.5, 60);
         _paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_paddle.size];
+        _paddle.physicsBody.affectedByGravity = NO;
         _paddle.physicsBody.dynamic = NO;
         _paddle.physicsBody.categoryBitMask = kPaddleCategory;
+        _paddle.physicsBody.contactTestBitMask = kFallCategory;
         [self addChild:_paddle];
         
         
         // Setup menu.
         _menu = [[BBMenu alloc] init];
         _menu.position = CGPointMake(self.size.width * 0.5, self.size.height * 0.5);
+        _menu.hidden = YES;
         [self addChild:_menu];
         
         // Set initial values.
@@ -134,7 +134,7 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Spongebob Soundtrack - Hawaiian Party" withExtension:@"mp3"];
     _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
     _backgroundMusic.numberOfLoops = -1;
-    _backgroundMusic.volume = 0.8;
+    _backgroundMusic.volume = 0.6;
     [_backgroundMusic play];
 }
 
@@ -187,14 +187,14 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         case 1:
             level = @[@[@1,@1,@1,@1,@1,@1],
                       @[@0,@1,@1,@1,@1,@0],
-                      @[@0,@0,@0,@3,@0,@0],
+                      @[@0,@0,@1,@1,@0,@0],
                       @[@0,@0,@0,@0,@0,@0],
                       @[@0,@2,@2,@2,@2,@0]];
-            /*level = @[@[@0,@0,@0,@1,@0,@0,@0],
+            level = @[@[@0,@0,@0,@1,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
                       @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0]];*/
+                      @[@0,@0,@0,@0,@0,@0,@0]];
             break;
             
         case 2:
@@ -249,6 +249,7 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
     ball.name = @"ball";
     ball.position = position;
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball.size.width * 0.5];
+    ball.physicsBody.affectedByGravity = NO;
     ball.physicsBody.friction = 0.0;
     ball.physicsBody.linearDamping = 0.0;
     ball.physicsBody.restitution = 1.0;
@@ -324,6 +325,18 @@ static const uint32_t kEdgeCategory   = 0x1 << 2;
         [self runAction:_paddleBounceSound];
     }
     
+    if (firstBody.categoryBitMask == kPaddleCategory && secondBody.categoryBitMask == kFallCategory) {
+        [secondBody.node removeFromParent];
+        SKAction *scaleSmall = [SKAction scaleTo:0.6 duration:0.3];
+        SKAction *scaleConstant = [SKAction scaleTo:0.6 duration:10];
+        SKAction *scaleLarge = [SKAction scaleTo:1 duration:0.3];
+        SKAction *scale = [SKAction sequence:@[scaleSmall, scaleConstant, scaleLarge]];
+        [_paddle runAction:scale];
+    }
+    
+    if (firstBody.categoryBitMask == kEdgeCategory && secondBody.categoryBitMask == kFallCategory) {
+        [firstBody.node removeFromParent];
+    }
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {

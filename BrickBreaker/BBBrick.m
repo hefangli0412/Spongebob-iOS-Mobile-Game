@@ -20,14 +20,14 @@
     
     switch (type) {
         case Green:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"gary_1"],
                                   [SKTexture textureWithImageNamed:@"gary_2"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
             [self runAction:[SKAction repeatActionForever:animation]];
             break;}
         case Blue:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"Spongebob_1"],
                                   [SKTexture textureWithImageNamed:@"Spongebob_2"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
@@ -36,7 +36,7 @@
             [self runAction:scale];
             break;}
         case Grey:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"krab_3"],
                                   [SKTexture textureWithImageNamed:@"krab_4"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
@@ -45,7 +45,7 @@
             [self runAction:scale];
             break;}
         case Yellow:
-            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 40)];
+            {self = [super initWithColor:[UIColor whiteColor] size:CGSizeMake(42, 35)];
             NSArray *textures = @[[SKTexture textureWithImageNamed:@"Patrick_star_3"],
                                   [SKTexture textureWithImageNamed:@"Patrick_star_4"]];
             SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
@@ -60,6 +60,7 @@
     
     if (self) {
         self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
+        self.physicsBody.affectedByGravity = NO;
         self.physicsBody.categoryBitMask = kBrickCategory;
         self.physicsBody.dynamic = NO;
         self.type = type;
@@ -76,7 +77,8 @@
 
 -(void)hit
 {
-    switch (self.type) {
+    switch (self.type)
+    {
         case Green:
             [self createExplosion];
             [self runAction:_brickSmashSound];
@@ -90,17 +92,28 @@
             break;
             
         case Blue:
-            {NSArray *textures = @[[SKTexture textureWithImageNamed:@"gary_1"],
+            {
+                NSArray *textures = @[[SKTexture textureWithImageNamed:@"gary_1"],
                                   [SKTexture textureWithImageNamed:@"gary_2"]];
-            SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
-            [self runAction:[SKAction repeatActionForever:animation]];
-            SKAction *scale = [SKAction resizeToWidth:self.size.width/0.8 height:self.size.height duration:0];
-            [self runAction:scale];
-            self.type = Green;
-            break;}
+                SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.5];
+                [self runAction:[SKAction repeatActionForever:animation]];
+                SKAction *scale = [SKAction resizeToWidth:self.size.width/0.8 height:self.size.height   duration:0];
+                [self runAction:scale];
+                self.type = Green;
+                break;
+            }
         default:
-            // Grey bricks are indestructible.
-            break;
+            {
+                // Grey bricks are indestructible.
+                SKSpriteNode *node = [SKSpriteNode spriteNodeWithImageNamed:@"plank_2"];
+                node.position = self.position;
+                [self.parent addChild:node];
+                node.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10];
+                node.physicsBody.categoryBitMask = kFallCategory;
+                node.physicsBody.contactTestBitMask = kPaddleCategory | kEdgeCategory;
+                node.physicsBody.affectedByGravity = YES;
+                break;
+            }
     }
 }
 

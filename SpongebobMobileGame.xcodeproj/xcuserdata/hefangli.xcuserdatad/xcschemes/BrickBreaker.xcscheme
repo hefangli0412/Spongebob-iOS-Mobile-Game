@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5775048318FE8B370010AC83"
-               BuildableName = "BrickBreaker.app"
-               BlueprintName = "BrickBreaker"
-               ReferencedContainer = "container:BrickBreaker.xcodeproj">
+               BuildableName = "SpongebobMobileGame.app"
+               BlueprintName = "SpongebobMobileGame"
+               ReferencedContainer = "container:SpongebobMobileGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "577504AB18FE8B380010AC83"
-               BuildableName = "BrickBreakerTests.xctest"
-               BlueprintName = "BrickBreakerTests"
-               ReferencedContainer = "container:BrickBreaker.xcodeproj">
+               BuildableName = "SpongebobMobileGameTests.xctest"
+               BlueprintName = "SpongebobMobileGameTests"
+               ReferencedContainer = "container:SpongebobMobileGame.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5775048318FE8B370010AC83"
-            BuildableName = "BrickBreaker.app"
-            BlueprintName = "BrickBreaker"
-            ReferencedContainer = "container:BrickBreaker.xcodeproj">
+            BuildableName = "SpongebobMobileGame.app"
+            BlueprintName = "SpongebobMobileGame"
+            ReferencedContainer = "container:SpongebobMobileGame.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5775048318FE8B370010AC83"
-            BuildableName = "BrickBreaker.app"
-            BlueprintName = "BrickBreaker"
-            ReferencedContainer = "container:BrickBreaker.xcodeproj">
+            BuildableName = "SpongebobMobileGame.app"
+            BlueprintName = "SpongebobMobileGame"
+            ReferencedContainer = "container:SpongebobMobileGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5775048318FE8B370010AC83"
-            BuildableName = "BrickBreaker.app"
-            BlueprintName = "BrickBreaker"
-            ReferencedContainer = "container:BrickBreaker.xcodeproj">
+            BuildableName = "SpongebobMobileGame.app"
+            BlueprintName = "SpongebobMobileGame"
+            ReferencedContainer = "container:SpongebobMobileGame.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

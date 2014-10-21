@@ -7,12 +7,8 @@
 //
 
 #import "BBViewController.h"
-#import "BBMyScene.h"
+#import "BBTitleScene.h"
 #import <MediaPlayer/MediaPlayer.h>
-
-@interface BBViewController()
-@property (nonatomic) MPMoviePlayerViewController * moviePlayer;
-@end
 
 @implementation BBViewController
 
@@ -22,30 +18,16 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    //skView.showsFPS = YES;
+    //skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [BBMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [BBTitleScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-//    [self playVideo];
     
     // Present the scene.
     [skView presentScene:scene];
 }
-
--(void)playVideo
-{
-    // play video file
-    NSURL *urlString = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"introvideo" ofType:@"mp4"]];
-    _moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:urlString];
-    
-    [self.view addSubview:_moviePlayer.view];
-
-//    [self presentViewController:_moviePlayer animated:NO completion:nil];
-}
-
 
 -(BOOL)prefersStatusBarHidden
 {

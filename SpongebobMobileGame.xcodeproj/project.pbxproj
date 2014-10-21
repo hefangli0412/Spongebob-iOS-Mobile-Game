@@ -29,36 +29,36 @@
 		577504B018FE8B380010AC83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5775048B18FE8B370010AC83 /* UIKit.framework */; };
 		577504B818FE8B380010AC83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577504B618FE8B380010AC83 /* InfoPlist.strings */; };
 		577504BA18FE8B380010AC83 /* BrickBreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504B918FE8B380010AC83 /* BrickBreakerTests.m */; };
-		577504C718FE8B770010AC83 /* BallBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577504C418FE8B770010AC83 /* BallBlue@2x.png */; };
 		577504D318FFEA270010AC83 /* BBBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 577504D218FFEA270010AC83 /* BBBrick.m */; };
-		57B4DAA819014276007373F1 /* HeartEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAA619014276007373F1 /* HeartEmpty@2x.png */; };
-		57B4DAA919014276007373F1 /* HeartFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAA719014276007373F1 /* HeartFull@2x.png */; };
 		57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */; };
 		57B4DAC91907F6F1007373F1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 57B4DAC71907F6F1007373F1 /* spark.png */; };
 		CD34AA6819F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */; };
+		CD4DF6DF19F5856A002CD795 /* BBTitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4DF6DE19F5856A002CD795 /* BBTitleScene.m */; };
 		CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4F702219F246ED0079937C /* UIImage+scale.m */; };
-		CD4F702619F24ABF0079937C /* krab_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702419F24ABF0079937C /* krab_4.png */; };
-		CD4F702719F24ABF0079937C /* krab_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702519F24ABF0079937C /* krab_3.png */; };
-		CD4F702A19F24C510079937C /* Patrick_star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702819F24C510079937C /* Patrick_star_3.png */; };
-		CD4F702B19F24C510079937C /* Patrick_star_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702919F24C510079937C /* Patrick_star_4.png */; };
-		CD4F702E19F24E590079937C /* Spongebob_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702C19F24E590079937C /* Spongebob_2.png */; };
-		CD4F702F19F24E590079937C /* Spongebob_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F702D19F24E590079937C /* Spongebob_1.png */; };
-		CD4F703119F25BFC0079937C /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F703019F25BFC0079937C /* bubble.png */; };
-		CD4F703719F260180079937C /* MenuPanel_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F703619F260180079937C /* MenuPanel_1@2x.png */; };
-		CD4F704519F269350079937C /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F704419F269350079937C /* Button@2x.png */; };
-		CD4F704D19F272760079937C /* sandy_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F704C19F272760079937C /* sandy_3.png */; };
-		CD4F705319F2750F0079937C /* squidward.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4F705219F2750F0079937C /* squidward.png */; };
 		CD4F705519F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */; };
 		CD4F705719F2CE650079937C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4F705619F2CE650079937C /* AVFoundation.framework */; };
-		CDA9330519F2E8E300313167 /* plank_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330319F2E8E300313167 /* plank_1.png */; };
-		CDA9330619F2E8E300313167 /* plank_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330419F2E8E300313167 /* plank_2.png */; };
-		CDA9330819F2EDBD00313167 /* spongebob-pants.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA9330719F2EDBD00313167 /* spongebob-pants.png */; };
+		CDA81E9C19F5FEB9003E075A /* BallBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8A19F5FEB9003E075A /* BallBlue@2x.png */; };
+		CDA81E9D19F5FEB9003E075A /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8B19F5FEB9003E075A /* bg_2.png */; };
+		CDA81E9E19F5FEB9003E075A /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8C19F5FEB9003E075A /* bg_3.png */; };
+		CDA81E9F19F5FEB9003E075A /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8D19F5FEB9003E075A /* bubble.png */; };
+		CDA81EA019F5FEB9003E075A /* gary_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8E19F5FEB9003E075A /* gary_1.png */; };
+		CDA81EA119F5FEB9003E075A /* gary_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E8F19F5FEB9003E075A /* gary_2.png */; };
+		CDA81EA219F5FEB9003E075A /* HeartEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9019F5FEB9003E075A /* HeartEmpty@2x.png */; };
+		CDA81EA319F5FEB9003E075A /* HeartFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9119F5FEB9003E075A /* HeartFull@2x.png */; };
+		CDA81EA419F5FEB9003E075A /* jellyfish.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9219F5FEB9003E075A /* jellyfish.png */; };
+		CDA81EA519F5FEB9003E075A /* krab_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9319F5FEB9003E075A /* krab_3.png */; };
+		CDA81EA619F5FEB9003E075A /* krab_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9419F5FEB9003E075A /* krab_4.png */; };
+		CDA81EA719F5FEB9003E075A /* MenuPanel_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9519F5FEB9003E075A /* MenuPanel_1@2x.png */; };
+		CDA81EA819F5FEB9003E075A /* plank_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9619F5FEB9003E075A /* plank_2.png */; };
+		CDA81EA919F5FEB9003E075A /* sandy_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9719F5FEB9003E075A /* sandy_3.png */; };
+		CDA81EAA19F5FEB9003E075A /* spongebob-pants.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9819F5FEB9003E075A /* spongebob-pants.png */; };
+		CDA81EAB19F5FEB9003E075A /* Spongebob_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9919F5FEB9003E075A /* Spongebob_1.png */; };
+		CDA81EAC19F5FEB9003E075A /* Spongebob_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9A19F5FEB9003E075A /* Spongebob_2.png */; };
+		CDA81EAD19F5FEB9003E075A /* squidward.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81E9B19F5FEB9003E075A /* squidward.png */; };
+		CDA81EAF19F602E4003E075A /* bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA81EAE19F602E4003E075A /* bg_1.png */; };
 		CDA9330C19F30A7C00313167 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA9330B19F30A7C00313167 /* MediaPlayer.framework */; };
 		CDA9332219F30DBF00313167 /* introvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDA9332119F30DBF00313167 /* introvideo.mp4 */; };
-		CDD1ED0D19F242AA0077163F /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0B19F242AA0077163F /* bg_2.png */; };
-		CDD1ED0E19F242AA0077163F /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0C19F242AA0077163F /* bg_3.png */; };
-		CDD1ED1119F244370077163F /* gary_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED0F19F244370077163F /* gary_1.png */; };
-		CDD1ED1219F244370077163F /* gary_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD1ED1019F244370077163F /* gary_2.png */; };
+		CDFE655C19F44317001AFA70 /* Spongebob-disappointed-sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = CDFE655B19F44317001AFA70 /* Spongebob-disappointed-sound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,15 +79,15 @@
 		573C02BC19091DBA00F63968 /* LevelUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelUp.caf; sourceTree = "<group>"; };
 		573C02BD19091DBA00F63968 /* LoseLife.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LoseLife.caf; sourceTree = "<group>"; };
 		573C02BE19091DBA00F63968 /* PaddleBounce.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PaddleBounce.caf; sourceTree = "<group>"; };
-		5775048418FE8B370010AC83 /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5775048418FE8B370010AC83 /* SpongebobMobileGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpongebobMobileGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5775048718FE8B370010AC83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5775048918FE8B370010AC83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5775048B18FE8B370010AC83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5775048D18FE8B380010AC83 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		5775049118FE8B380010AC83 /* BrickBreaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrickBreaker-Info.plist"; sourceTree = "<group>"; };
+		5775049118FE8B380010AC83 /* SpongebobMobileGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpongebobMobileGame-Info.plist"; sourceTree = "<group>"; };
 		5775049318FE8B380010AC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5775049518FE8B380010AC83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5775049718FE8B380010AC83 /* BrickBreaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrickBreaker-Prefix.pch"; sourceTree = "<group>"; };
+		5775049718FE8B380010AC83 /* SpongebobMobileGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpongebobMobileGame-Prefix.pch"; sourceTree = "<group>"; };
 		5775049818FE8B380010AC83 /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
 		5775049918FE8B380010AC83 /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
 		5775049C18FE8B380010AC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,43 +96,44 @@
 		577504A118FE8B380010AC83 /* BBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMyScene.h; sourceTree = "<group>"; };
 		577504A218FE8B380010AC83 /* BBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMyScene.m; sourceTree = "<group>"; };
 		577504A618FE8B380010AC83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickBreakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		577504AC18FE8B380010AC83 /* SpongebobMobileGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpongebobMobileGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577504AD18FE8B380010AC83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		577504B518FE8B380010AC83 /* BrickBreakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BrickBreakerTests-Info.plist"; sourceTree = "<group>"; };
+		577504B518FE8B380010AC83 /* SpongebobMobileGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpongebobMobileGameTests-Info.plist"; sourceTree = "<group>"; };
 		577504B718FE8B380010AC83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		577504B918FE8B380010AC83 /* BrickBreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrickBreakerTests.m; sourceTree = "<group>"; };
-		577504C418FE8B770010AC83 /* BallBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BallBlue@2x.png"; sourceTree = "<group>"; };
 		577504D118FFEA270010AC83 /* BBBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBrick.h; sourceTree = "<group>"; };
 		577504D218FFEA270010AC83 /* BBBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBrick.m; sourceTree = "<group>"; };
-		57B4DAA619014276007373F1 /* HeartEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartEmpty@2x.png"; sourceTree = "<group>"; };
-		57B4DAA719014276007373F1 /* HeartFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartFull@2x.png"; sourceTree = "<group>"; };
 		57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrickExplosion.sks; sourceTree = "<group>"; };
 		57B4DAC71907F6F1007373F1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spongebob Soundtrack - Hawaiian Party.mp3"; sourceTree = "<group>"; };
+		CD4DF6DD19F5856A002CD795 /* BBTitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTitleScene.h; sourceTree = "<group>"; };
+		CD4DF6DE19F5856A002CD795 /* BBTitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTitleScene.m; sourceTree = "<group>"; };
 		CD4F702119F246ED0079937C /* UIImage+scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+scale.h"; sourceTree = "<group>"; };
 		CD4F702219F246ED0079937C /* UIImage+scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+scale.m"; sourceTree = "<group>"; };
-		CD4F702419F24ABF0079937C /* krab_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_4.png; sourceTree = "<group>"; };
-		CD4F702519F24ABF0079937C /* krab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_3.png; sourceTree = "<group>"; };
-		CD4F702819F24C510079937C /* Patrick_star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Patrick_star_3.png; path = ../Patrick_star_3.png; sourceTree = "<group>"; };
-		CD4F702919F24C510079937C /* Patrick_star_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Patrick_star_4.png; path = ../Patrick_star_4.png; sourceTree = "<group>"; };
-		CD4F702C19F24E590079937C /* Spongebob_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_2.png; sourceTree = "<group>"; };
-		CD4F702D19F24E590079937C /* Spongebob_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_1.png; sourceTree = "<group>"; };
-		CD4F703019F25BFC0079937C /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
-		CD4F703619F260180079937C /* MenuPanel_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuPanel_1@2x.png"; sourceTree = "<group>"; };
-		CD4F704419F269350079937C /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
-		CD4F704C19F272760079937C /* sandy_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandy_3.png; sourceTree = "<group>"; };
-		CD4F705219F2750F0079937C /* squidward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squidward.png; sourceTree = "<group>"; };
 		CD4F705419F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SpongeBob Soundtracks - Soundtrack 4.mp3"; sourceTree = "<group>"; };
 		CD4F705619F2CE650079937C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CDA9330319F2E8E300313167 /* plank_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank_1.png; sourceTree = "<group>"; };
-		CDA9330419F2E8E300313167 /* plank_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank_2.png; sourceTree = "<group>"; };
-		CDA9330719F2EDBD00313167 /* spongebob-pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spongebob-pants.png"; sourceTree = "<group>"; };
+		CDA81E8A19F5FEB9003E075A /* BallBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BallBlue@2x.png"; sourceTree = "<group>"; };
+		CDA81E8B19F5FEB9003E075A /* bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_2.png; sourceTree = "<group>"; };
+		CDA81E8C19F5FEB9003E075A /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_3.png; sourceTree = "<group>"; };
+		CDA81E8D19F5FEB9003E075A /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		CDA81E8E19F5FEB9003E075A /* gary_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_1.png; sourceTree = "<group>"; };
+		CDA81E8F19F5FEB9003E075A /* gary_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_2.png; sourceTree = "<group>"; };
+		CDA81E9019F5FEB9003E075A /* HeartEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartEmpty@2x.png"; sourceTree = "<group>"; };
+		CDA81E9119F5FEB9003E075A /* HeartFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeartFull@2x.png"; sourceTree = "<group>"; };
+		CDA81E9219F5FEB9003E075A /* jellyfish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jellyfish.png; sourceTree = "<group>"; };
+		CDA81E9319F5FEB9003E075A /* krab_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_3.png; sourceTree = "<group>"; };
+		CDA81E9419F5FEB9003E075A /* krab_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krab_4.png; sourceTree = "<group>"; };
+		CDA81E9519F5FEB9003E075A /* MenuPanel_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuPanel_1@2x.png"; sourceTree = "<group>"; };
+		CDA81E9619F5FEB9003E075A /* plank_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank_2.png; sourceTree = "<group>"; };
+		CDA81E9719F5FEB9003E075A /* sandy_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandy_3.png; sourceTree = "<group>"; };
+		CDA81E9819F5FEB9003E075A /* spongebob-pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spongebob-pants.png"; sourceTree = "<group>"; };
+		CDA81E9919F5FEB9003E075A /* Spongebob_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_1.png; sourceTree = "<group>"; };
+		CDA81E9A19F5FEB9003E075A /* Spongebob_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spongebob_2.png; sourceTree = "<group>"; };
+		CDA81E9B19F5FEB9003E075A /* squidward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squidward.png; sourceTree = "<group>"; };
+		CDA81EAE19F602E4003E075A /* bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_1.png; sourceTree = "<group>"; };
 		CDA9330B19F30A7C00313167 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		CDA9332119F30DBF00313167 /* introvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = introvideo.mp4; sourceTree = "<group>"; };
-		CDD1ED0B19F242AA0077163F /* bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_2.png; sourceTree = "<group>"; };
-		CDD1ED0C19F242AA0077163F /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_3.png; sourceTree = "<group>"; };
-		CDD1ED0F19F244370077163F /* gary_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_1.png; sourceTree = "<group>"; };
-		CDD1ED1019F244370077163F /* gary_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gary_2.png; sourceTree = "<group>"; };
+		CDFE655B19F44317001AFA70 /* Spongebob-disappointed-sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spongebob-disappointed-sound.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				573C02BA19091DBA00F63968 /* BallBounce.caf */,
+				CDFE655B19F44317001AFA70 /* Spongebob-disappointed-sound.caf */,
 				573C02BB19091DBA00F63968 /* BrickSmash.caf */,
 				CD34AA6719F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 */,
 				573C02BC19091DBA00F63968 /* LevelUp.caf */,
@@ -190,8 +192,8 @@
 		5775048518FE8B370010AC83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5775048418FE8B370010AC83 /* BrickBreaker.app */,
-				577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */,
+				5775048418FE8B370010AC83 /* SpongebobMobileGame.app */,
+				577504AC18FE8B380010AC83 /* SpongebobMobileGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,19 +215,16 @@
 		5775048F18FE8B380010AC83 /* BrickBreaker */ = {
 			isa = PBXGroup;
 			children = (
+				CDA81E8919F5FEB9003E075A /* Graphics */,
 				573C02B919091DBA00F63968 /* Sounds */,
-				577504C318FE8B770010AC83 /* Graphics */,
-				5775049818FE8B380010AC83 /* BBAppDelegate.h */,
-				5775049918FE8B380010AC83 /* BBAppDelegate.m */,
-				5775049B18FE8B380010AC83 /* Main.storyboard */,
-				5775049E18FE8B380010AC83 /* BBViewController.h */,
-				5775049F18FE8B380010AC83 /* BBViewController.m */,
+				CD4DF6DD19F5856A002CD795 /* BBTitleScene.h */,
+				CD4DF6DE19F5856A002CD795 /* BBTitleScene.m */,
+				577504A118FE8B380010AC83 /* BBMyScene.h */,
+				577504A218FE8B380010AC83 /* BBMyScene.m */,
 				573C02B61908050C00F63968 /* BBMenu.h */,
 				573C02B71908050C00F63968 /* BBMenu.m */,
 				577504D118FFEA270010AC83 /* BBBrick.h */,
 				577504D218FFEA270010AC83 /* BBBrick.m */,
-				577504A118FE8B380010AC83 /* BBMyScene.h */,
-				577504A218FE8B380010AC83 /* BBMyScene.m */,
 				CD4F702119F246ED0079937C /* UIImage+scale.h */,
 				CD4F702219F246ED0079937C /* UIImage+scale.m */,
 				57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */,
@@ -239,10 +238,15 @@
 		5775049018FE8B380010AC83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5775049118FE8B380010AC83 /* BrickBreaker-Info.plist */,
+				5775049818FE8B380010AC83 /* BBAppDelegate.h */,
+				5775049918FE8B380010AC83 /* BBAppDelegate.m */,
+				5775049B18FE8B380010AC83 /* Main.storyboard */,
+				5775049E18FE8B380010AC83 /* BBViewController.h */,
+				5775049F18FE8B380010AC83 /* BBViewController.m */,
+				5775049118FE8B380010AC83 /* SpongebobMobileGame-Info.plist */,
 				5775049218FE8B380010AC83 /* InfoPlist.strings */,
 				5775049518FE8B380010AC83 /* main.m */,
-				5775049718FE8B380010AC83 /* BrickBreaker-Prefix.pch */,
+				5775049718FE8B380010AC83 /* SpongebobMobileGame-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,36 +263,34 @@
 		577504B418FE8B380010AC83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				577504B518FE8B380010AC83 /* BrickBreakerTests-Info.plist */,
+				577504B518FE8B380010AC83 /* SpongebobMobileGameTests-Info.plist */,
 				577504B618FE8B380010AC83 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		577504C318FE8B770010AC83 /* Graphics */ = {
+		CDA81E8919F5FEB9003E075A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				CDD1ED0B19F242AA0077163F /* bg_2.png */,
-				CDD1ED0C19F242AA0077163F /* bg_3.png */,
-				CD4F704C19F272760079937C /* sandy_3.png */,
-				CDD1ED0F19F244370077163F /* gary_1.png */,
-				CD4F702C19F24E590079937C /* Spongebob_2.png */,
-				CD4F705219F2750F0079937C /* squidward.png */,
-				CD4F704419F269350079937C /* Button@2x.png */,
-				CD4F702D19F24E590079937C /* Spongebob_1.png */,
-				CDA9330719F2EDBD00313167 /* spongebob-pants.png */,
-				CD4F703619F260180079937C /* MenuPanel_1@2x.png */,
-				CDA9330319F2E8E300313167 /* plank_1.png */,
-				CDA9330419F2E8E300313167 /* plank_2.png */,
-				CDD1ED1019F244370077163F /* gary_2.png */,
-				CD4F702419F24ABF0079937C /* krab_4.png */,
-				CD4F702519F24ABF0079937C /* krab_3.png */,
-				CD4F702819F24C510079937C /* Patrick_star_3.png */,
-				CD4F702919F24C510079937C /* Patrick_star_4.png */,
-				CD4F703019F25BFC0079937C /* bubble.png */,
-				57B4DAA619014276007373F1 /* HeartEmpty@2x.png */,
-				57B4DAA719014276007373F1 /* HeartFull@2x.png */,
-				577504C418FE8B770010AC83 /* BallBlue@2x.png */,
+				CDA81E8A19F5FEB9003E075A /* BallBlue@2x.png */,
+				CDA81E8B19F5FEB9003E075A /* bg_2.png */,
+				CDA81E8C19F5FEB9003E075A /* bg_3.png */,
+				CDA81EAE19F602E4003E075A /* bg_1.png */,
+				CDA81E8D19F5FEB9003E075A /* bubble.png */,
+				CDA81E8E19F5FEB9003E075A /* gary_1.png */,
+				CDA81E8F19F5FEB9003E075A /* gary_2.png */,
+				CDA81E9019F5FEB9003E075A /* HeartEmpty@2x.png */,
+				CDA81E9119F5FEB9003E075A /* HeartFull@2x.png */,
+				CDA81E9219F5FEB9003E075A /* jellyfish.png */,
+				CDA81E9319F5FEB9003E075A /* krab_3.png */,
+				CDA81E9419F5FEB9003E075A /* krab_4.png */,
+				CDA81E9519F5FEB9003E075A /* MenuPanel_1@2x.png */,
+				CDA81E9619F5FEB9003E075A /* plank_2.png */,
+				CDA81E9719F5FEB9003E075A /* sandy_3.png */,
+				CDA81E9819F5FEB9003E075A /* spongebob-pants.png */,
+				CDA81E9919F5FEB9003E075A /* Spongebob_1.png */,
+				CDA81E9A19F5FEB9003E075A /* Spongebob_2.png */,
+				CDA81E9B19F5FEB9003E075A /* squidward.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -296,9 +298,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5775048318FE8B370010AC83 /* BrickBreaker */ = {
+		5775048318FE8B370010AC83 /* SpongebobMobileGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreaker" */;
+			buildConfigurationList = 577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "SpongebobMobileGame" */;
 			buildPhases = (
 				5775048018FE8B370010AC83 /* Sources */,
 				5775048118FE8B370010AC83 /* Frameworks */,
@@ -308,14 +310,14 @@
 			);
 			dependencies = (
 			);
-			name = BrickBreaker;
+			name = SpongebobMobileGame;
 			productName = BrickBreaker;
-			productReference = 5775048418FE8B370010AC83 /* BrickBreaker.app */;
+			productReference = 5775048418FE8B370010AC83 /* SpongebobMobileGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		577504AB18FE8B380010AC83 /* BrickBreakerTests */ = {
+		577504AB18FE8B380010AC83 /* SpongebobMobileGameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreakerTests" */;
+			buildConfigurationList = 577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "SpongebobMobileGameTests" */;
 			buildPhases = (
 				577504A818FE8B380010AC83 /* Sources */,
 				577504A918FE8B380010AC83 /* Frameworks */,
@@ -326,9 +328,9 @@
 			dependencies = (
 				577504B218FE8B380010AC83 /* PBXTargetDependency */,
 			);
-			name = BrickBreakerTests;
+			name = SpongebobMobileGameTests;
 			productName = BrickBreakerTests;
-			productReference = 577504AC18FE8B380010AC83 /* BrickBreakerTests.xctest */;
+			productReference = 577504AC18FE8B380010AC83 /* SpongebobMobileGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +348,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "BrickBreaker" */;
+			buildConfigurationList = 5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "SpongebobMobileGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -359,8 +361,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5775048318FE8B370010AC83 /* BrickBreaker */,
-				577504AB18FE8B380010AC83 /* BrickBreakerTests */,
+				5775048318FE8B370010AC83 /* SpongebobMobileGame */,
+				577504AB18FE8B380010AC83 /* SpongebobMobileGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -370,40 +372,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B4DAA919014276007373F1 /* HeartFull@2x.png in Resources */,
 				57B4DAC91907F6F1007373F1 /* spark.png in Resources */,
-				CDA9330619F2E8E300313167 /* plank_2.png in Resources */,
 				5775049418FE8B380010AC83 /* InfoPlist.strings in Resources */,
-				CD4F703719F260180079937C /* MenuPanel_1@2x.png in Resources */,
+				CDA81E9C19F5FEB9003E075A /* BallBlue@2x.png in Resources */,
 				577504A718FE8B380010AC83 /* Images.xcassets in Resources */,
+				CDA81EA219F5FEB9003E075A /* HeartEmpty@2x.png in Resources */,
 				CD4F705519F2CB860079937C /* SpongeBob Soundtracks - Soundtrack 4.mp3 in Resources */,
-				CD4F704519F269350079937C /* Button@2x.png in Resources */,
-				57B4DAA819014276007373F1 /* HeartEmpty@2x.png in Resources */,
-				CD4F702F19F24E590079937C /* Spongebob_1.png in Resources */,
-				CD4F704D19F272760079937C /* sandy_3.png in Resources */,
+				CDA81EAC19F5FEB9003E075A /* Spongebob_2.png in Resources */,
+				CDA81E9D19F5FEB9003E075A /* bg_2.png in Resources */,
+				CDA81EAB19F5FEB9003E075A /* Spongebob_1.png in Resources */,
 				5775049D18FE8B380010AC83 /* Main.storyboard in Resources */,
 				57B4DAC81907F6F1007373F1 /* BrickExplosion.sks in Resources */,
 				573C02C119091DBA00F63968 /* LevelUp.caf in Resources */,
-				CD4F705319F2750F0079937C /* squidward.png in Resources */,
-				CDA9330519F2E8E300313167 /* plank_1.png in Resources */,
-				CDD1ED0E19F242AA0077163F /* bg_3.png in Resources */,
+				CDA81EA419F5FEB9003E075A /* jellyfish.png in Resources */,
+				CDA81EA919F5FEB9003E075A /* sandy_3.png in Resources */,
+				CDA81EA819F5FEB9003E075A /* plank_2.png in Resources */,
+				CDA81E9E19F5FEB9003E075A /* bg_3.png in Resources */,
+				CDFE655C19F44317001AFA70 /* Spongebob-disappointed-sound.caf in Resources */,
+				CDA81E9F19F5FEB9003E075A /* bubble.png in Resources */,
+				CDA81EAA19F5FEB9003E075A /* spongebob-pants.png in Resources */,
 				573C02C319091DBA00F63968 /* PaddleBounce.caf in Resources */,
-				CD4F702B19F24C510079937C /* Patrick_star_4.png in Resources */,
+				CDA81EAD19F5FEB9003E075A /* squidward.png in Resources */,
+				CDA81EA319F5FEB9003E075A /* HeartFull@2x.png in Resources */,
+				CDA81EA719F5FEB9003E075A /* MenuPanel_1@2x.png in Resources */,
 				CDA9332219F30DBF00313167 /* introvideo.mp4 in Resources */,
-				CD4F702A19F24C510079937C /* Patrick_star_3.png in Resources */,
-				CDD1ED1219F244370077163F /* gary_2.png in Resources */,
+				CDA81EA019F5FEB9003E075A /* gary_1.png in Resources */,
 				573C02C219091DBA00F63968 /* LoseLife.caf in Resources */,
+				CDA81EA619F5FEB9003E075A /* krab_4.png in Resources */,
 				573C02BF19091DBA00F63968 /* BallBounce.caf in Resources */,
-				CD4F702719F24ABF0079937C /* krab_3.png in Resources */,
-				CDA9330819F2EDBD00313167 /* spongebob-pants.png in Resources */,
-				CD4F703119F25BFC0079937C /* bubble.png in Resources */,
+				CDA81EA119F5FEB9003E075A /* gary_2.png in Resources */,
+				CDA81EAF19F602E4003E075A /* bg_1.png in Resources */,
 				CD34AA6819F36937004C88AE /* Spongebob Soundtrack - Hawaiian Party.mp3 in Resources */,
-				CD4F702619F24ABF0079937C /* krab_4.png in Resources */,
-				CDD1ED1119F244370077163F /* gary_1.png in Resources */,
-				CDD1ED0D19F242AA0077163F /* bg_2.png in Resources */,
 				573C02C019091DBA00F63968 /* BrickSmash.caf in Resources */,
-				CD4F702E19F24E590079937C /* Spongebob_2.png in Resources */,
-				577504C718FE8B770010AC83 /* BallBlue@2x.png in Resources */,
+				CDA81EA519F5FEB9003E075A /* krab_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +428,7 @@
 				577504A318FE8B380010AC83 /* BBMyScene.m in Sources */,
 				577504D318FFEA270010AC83 /* BBBrick.m in Sources */,
 				CD4F702319F246ED0079937C /* UIImage+scale.m in Sources */,
+				CD4DF6DF19F5856A002CD795 /* BBTitleScene.m in Sources */,
 				573C02B81908050C00F63968 /* BBMenu.m in Sources */,
 				5775049618FE8B380010AC83 /* main.m in Sources */,
 			);
@@ -445,7 +447,7 @@
 /* Begin PBXTargetDependency section */
 		577504B218FE8B380010AC83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5775048318FE8B370010AC83 /* BrickBreaker */;
+			target = 5775048318FE8B370010AC83 /* SpongebobMobileGame */;
 			targetProxy = 577504B118FE8B380010AC83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -554,9 +556,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
-				INFOPLIST_FILE = "BrickBreaker/BrickBreaker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BrickBreaker/SpongebobMobileGame-Prefix.pch";
+				INFOPLIST_FILE = "BrickBreaker/SpongebobMobileGame-Info.plist";
+				PRODUCT_NAME = SpongebobMobileGame;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,9 +570,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
-				INFOPLIST_FILE = "BrickBreaker/BrickBreaker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BrickBreaker/SpongebobMobileGame-Prefix.pch";
+				INFOPLIST_FILE = "BrickBreaker/SpongebobMobileGame-Info.plist";
+				PRODUCT_NAME = SpongebobMobileGame;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -591,8 +593,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BrickBreakerTests/BrickBreakerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BrickBreakerTests/SpongebobMobileGameTests-Info.plist";
+				PRODUCT_NAME = SpongebobMobileGameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -609,8 +611,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrickBreaker/BrickBreaker-Prefix.pch";
-				INFOPLIST_FILE = "BrickBreakerTests/BrickBreakerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BrickBreakerTests/SpongebobMobileGameTests-Info.plist";
+				PRODUCT_NAME = SpongebobMobileGameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -619,7 +621,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "BrickBreaker" */ = {
+		5775047F18FE8B370010AC83 /* Build configuration list for PBXProject "SpongebobMobileGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				577504BB18FE8B380010AC83 /* Debug */,
@@ -628,7 +630,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreaker" */ = {
+		577504BD18FE8B380010AC83 /* Build configuration list for PBXNativeTarget "SpongebobMobileGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				577504BE18FE8B380010AC83 /* Debug */,
@@ -637,7 +639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "BrickBreakerTests" */ = {
+		577504C018FE8B380010AC83 /* Build configuration list for PBXNativeTarget "SpongebobMobileGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				577504C118FE8B380010AC83 /* Debug */,

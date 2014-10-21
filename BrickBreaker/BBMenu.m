@@ -54,6 +54,7 @@
         [_playButton addChild:_buttonText];
         
     }
+    
     return self;
 }
 
