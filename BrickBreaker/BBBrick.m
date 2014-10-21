@@ -105,16 +105,16 @@
         default:
             {
                 // Grey bricks are indestructible.
-                SKSpriteNode *node = [SKSpriteNode spriteNodeWithImageNamed:@"plank_2"];
-                node.position = self.position;
-                [self.parent addChild:node];
-                node.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10];
-                node.physicsBody.categoryBitMask = kFallCategory;
-                node.physicsBody.contactTestBitMask = kPaddleCategory | kEdgeCategory;
-                node.physicsBody.velocity = CGVectorMake([BBUtil randomWithMin:-50 max:50], [BBUtil randomWithMin:-230 max:-300]);
+                SKSpriteNode *enemyNode = [SKSpriteNode spriteNodeWithImageNamed:@"plank_2"];
+                enemyNode.position = self.position;
+                [self.parent addChild:enemyNode];
+                enemyNode.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10];
+                enemyNode.physicsBody.categoryBitMask = kFallCategory;
+                enemyNode.physicsBody.contactTestBitMask = kPaddleCategory | kEdgeCategory;
+                enemyNode.physicsBody.velocity = CGVectorMake([BBUtil randomWithMin:kEnemyMinSpeedX max:kEnemyMaxSpeedX], [BBUtil randomWithMin:kEnemyMinSpeedY max:kEnemyMaxSpeedY]);
                 
-                [node runAction:[SKAction waitForDuration:3.0] completion:^{
-                    [node removeFromParent];
+                [enemyNode runAction:[SKAction waitForDuration:3.0] completion:^{
+                    [enemyNode removeFromParent];
                 }];
                 break;
             }

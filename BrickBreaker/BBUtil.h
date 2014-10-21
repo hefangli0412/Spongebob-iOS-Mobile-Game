@@ -16,6 +16,13 @@ static const uint32_t kBallCategory   = 0x1 << 0;
 
 static const int kFinalLevelNumber = 3;
 
+static const int kEnemyMinSpeedX = -50;
+static const int kEnemyMaxSpeedX = 50;
+static const int kEnemyMinSpeedY = -230;
+static const int kEnemyMaxSpeedY = -300;
+
+static const int kBallSpeed = 250.0;
+
 @interface BBUtil : NSObject
 
 + (NSInteger) randomWithMin:(NSInteger)min max:(NSInteger)max;

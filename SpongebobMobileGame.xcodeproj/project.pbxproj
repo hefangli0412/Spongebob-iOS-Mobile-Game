@@ -229,12 +229,12 @@
 				573C02B71908050C00F63968 /* BBMenu.m */,
 				577504D118FFEA270010AC83 /* BBBrick.h */,
 				577504D218FFEA270010AC83 /* BBBrick.m */,
+				CD1C07F319F6E30A0039E0A4 /* BBUtil.h */,
+				CD1C07F419F6E30A0039E0A4 /* BBUtil.m */,
 				57B4DAC61907F6F1007373F1 /* BrickExplosion.sks */,
 				57B4DAC71907F6F1007373F1 /* spark.png */,
 				577504A618FE8B380010AC83 /* Images.xcassets */,
 				5775049018FE8B380010AC83 /* Supporting Files */,
-				CD1C07F319F6E30A0039E0A4 /* BBUtil.h */,
-				CD1C07F419F6E30A0039E0A4 /* BBUtil.m */,
 			);
 			path = BrickBreaker;
 			sourceTree = "<group>";

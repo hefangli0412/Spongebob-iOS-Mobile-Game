@@ -113,7 +113,7 @@
         [self addChild:_menu];
         
         // Set initial values.
-        _ballSpeed = 250.0;
+        _ballSpeed = kBallSpeed;
         _ballReleased = NO;
         self.currentLevel = 1;
         self.lives = 2;
