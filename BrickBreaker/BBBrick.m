@@ -7,7 +7,7 @@
 //
 
 #import "BBBrick.h"
-#import "UIImage+scale.h"
+#import "BBUtil.h"
 
 @implementation BBBrick
 {
@@ -111,9 +111,9 @@
                 node.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10];
                 node.physicsBody.categoryBitMask = kFallCategory;
                 node.physicsBody.contactTestBitMask = kPaddleCategory | kEdgeCategory;
-                node.physicsBody.affectedByGravity = YES;
+                node.physicsBody.velocity = CGVectorMake([BBUtil randomWithMin:-50 max:50], [BBUtil randomWithMin:-230 max:-300]);
                 
-                [node runAction:[SKAction waitForDuration:2.0] completion:^{
+                [node runAction:[SKAction waitForDuration:3.0] completion:^{
                     [node removeFromParent];
                 }];
                 break;

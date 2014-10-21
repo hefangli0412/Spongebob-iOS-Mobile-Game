@@ -15,11 +15,6 @@ typedef enum : NSUInteger {
     Yellow = 4,
 } BrickType;
 
-static const uint32_t kPaddleCategory = 0x1 << 1;
-static const uint32_t kEdgeCategory   = 0x1 << 2;
-static const uint32_t kBrickCategory = 0x1 << 3;
-static const uint32_t kFallCategory  = 0x1 << 4;
-
 @interface BBBrick : SKSpriteNode
 
 @property (nonatomic) BrickType type;

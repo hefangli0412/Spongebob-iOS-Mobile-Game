@@ -10,6 +10,7 @@
 #import "BBBrick.h"
 #import "BBMenu.h"
 #import <AVFoundation/AVFoundation.h>
+#import "BBUtil.h"
 
 @interface BBMyScene()
 
@@ -38,10 +39,6 @@
     SKAction *_loseLifeSound;
 }
 
-static const int kFinalLevelNumber = 3;
-
-static const uint32_t kBallCategory   = 0x1 << 0;
-
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
@@ -54,7 +51,7 @@ static const uint32_t kBallCategory   = 0x1 << 0;
         [self addChild:bg];
 
         // Turn on gravity.
-        self.physicsWorld.gravity = CGVectorMake(0.0, -3.6);
+        self.physicsWorld.gravity = CGVectorMake(0.0, 0.0);
         // Set contact delgate.
         self.physicsWorld.contactDelegate = self;
         
@@ -103,7 +100,6 @@ static const uint32_t kBallCategory   = 0x1 << 0;
         _paddle = [SKSpriteNode spriteNodeWithImageNamed:@"squidward"];
         _paddle.position = CGPointMake(self.size.width * 0.5, 60);
         _paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_paddle.size];
-        _paddle.physicsBody.affectedByGravity = NO;
         _paddle.physicsBody.dynamic = NO;
         _paddle.physicsBody.categoryBitMask = kPaddleCategory;
         _paddle.physicsBody.contactTestBitMask = kFallCategory;
@@ -204,11 +200,6 @@ static const uint32_t kBallCategory   = 0x1 << 0;
                       @[@0,@0,@1,@1,@0,@0],
                       @[@1,@0,@1,@1,@0,@1],
                       @[@1,@1,@3,@3,@1,@1]];
-            level = @[@[@0,@0,@0,@1,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0],
-                      @[@0,@0,@0,@0,@0,@0,@0]];
             break;
             
         case 3:
@@ -254,7 +245,6 @@ static const uint32_t kBallCategory   = 0x1 << 0;
     ball.name = @"ball";
     ball.position = position;
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball.size.width * 0.5];
-    ball.physicsBody.affectedByGravity = NO;
     ball.physicsBody.friction = 0.0;
     ball.physicsBody.linearDamping = 0.0;
     ball.physicsBody.restitution = 1.0;
