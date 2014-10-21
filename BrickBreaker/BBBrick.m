@@ -112,6 +112,10 @@
                 node.physicsBody.categoryBitMask = kFallCategory;
                 node.physicsBody.contactTestBitMask = kPaddleCategory | kEdgeCategory;
                 node.physicsBody.affectedByGravity = YES;
+                
+                [node runAction:[SKAction waitForDuration:2.0] completion:^{
+                    [node removeFromParent];
+                }];
                 break;
             }
     }
